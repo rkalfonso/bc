@@ -15,7 +15,7 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
+            // $table->unsignedBigInteger('user_id');
             $table->string('age')->nullable();
             $table->date('birthdate')->nullable();
             $table->string('education')->nullable();
@@ -23,7 +23,9 @@ class CreateProfilesTable extends Migration
             $table->string('skills')->nullable();
             $table->string('bio')->nullable();
 
-            $table->index('user_id');
+            // $table->index('user_id');
+            // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

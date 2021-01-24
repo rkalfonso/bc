@@ -15,8 +15,8 @@ class CreateDependentsTable extends Migration
     {
         Schema::create('dependents', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('member_id');
-            $table->int('flag');
+            // $table->unsignedBigInteger('member_id');
+            $table->integer('flag');
 
             //profile
             $table->string('first_name');
@@ -29,6 +29,8 @@ class CreateDependentsTable extends Migration
             $table->string('phone_number');
             $table->string('cellphone_number');
 
+            // $table->foreign('member_id')->references('id')->on('members')->onDelete('cascade');
+            $table->foreignId('member_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
