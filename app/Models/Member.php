@@ -9,6 +9,13 @@ class Member extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'email',
+        'username',
+        'password',
+    ];
+
     public function dependent()
     {
         return $this->hasMany(Dependent::class);

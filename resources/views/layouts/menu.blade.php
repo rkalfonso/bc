@@ -6,52 +6,23 @@
     </a>
 </li> --}}
 
-<li class="nav-item has-treeview">
+<li class="nav-item has-treeview menu-open active">
     <a href="dashboard.php" class="nav-link">
         <i class="nav-icon fas fa-home"></i>
         <p>Dashboard</p>
     </a>
 </li>
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-      <i class="nav-icon fas fa-user"></i>
-      <p>
-        User Management
-        <i class="right fas fa-angle-left"></i>
-      </p>
-    </a>
-    <ul class="nav nav-treeview">
-      <li class="nav-item">
-        <a href="all-user.php" class="nav-link">
-          <i class="nav-icon fas fa-user-friends"></i>
-          <p>All Users</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="add-user.php" class="nav-link">
-          <i class="nav-icon fas fa-plus-circle"></i>
-          <p>Add New User</p>
-        </a>
-      </li>
-      <!-- <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fas fa-user-shield nav-icon"></i>
-          <p>Manage Roles</p>
-        </a>
-      </li> -->
-    </ul>
-  </li>
-  <li class="nav-item has-treeview menu-open">
-    <a href="#" class="nav-link active">
+<li class="nav-item has-treeview menu-open active">
+    <a href="#" class="nav-link ">
       <i class="nav-icon fas fa-id-card"></i>
       <p>
-        Card Management
+        Member Management
         <i class="fas fa-angle-left right"></i>
       </p>
     </a>
     <ul class="nav nav-treeview">
       <li class="nav-item">
-        <a href="all-member.php" class="nav-link active">
+        <a href="all-member.php" class="nav-link ">
           <i class="fas fa-users nav-icon"></i>
           <p>All Members</p>
         </a>
@@ -88,6 +59,30 @@
       </li> -->
     </ul>
   </li>
+<li class="nav-item has-treeview menu-open active">
+    <a href="#" class="nav-link">
+      <i class="nav-icon fas fa-user"></i>
+      <p>
+        User Management
+        <i class="right fas fa-angle-left"></i>
+      </p>
+    </a>
+    <ul class="nav nav-treeview">
+      <li class="nav-item">
+        <a href="all-user.php" class="nav-link">
+          <i class="nav-icon fas fa-user-friends"></i>
+          <p>All Users</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="add-user.php" class="nav-link">
+          <i class="nav-icon fas fa-plus-circle"></i>
+          <p>Add New User</p>
+        </a>
+      </li>
+    </ul>
+  </li>
+
   <li class="nav-item">
     <a href="#" class="nav-link">
       <i class="nav-icon fas fa-edit"></i>

@@ -14,9 +14,9 @@ class CreateMembersTable extends Migration
     public function up()
     {
         Schema::create('members', function (Blueprint $table) {
-            $table->id();
+            $table->id()->startingValue(1000123459);
             $table->integer('flag')->nullable();
-            $table->bigInteger('card_number')->nullable();
+            //$table->increments('card_number')->startingValue(1000123459);;
             $table->string('category')->nullable();
             $table->string('category_id')->nullable();
 
@@ -45,6 +45,8 @@ class CreateMembersTable extends Migration
             // $table->string('zip_code')->nullable();
 
             $table->timestamps();
+            // $table->dropPrimary('card_number');
+            //$table->primary(array('id'));
         });
     }
 

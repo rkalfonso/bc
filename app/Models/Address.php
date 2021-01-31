@@ -9,6 +9,8 @@ class Address extends Model
 {
     use HasFactory;
 
+
+
     public function member()
     {
         return $this->belongsToMany(Member::class);
