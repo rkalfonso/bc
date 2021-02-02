@@ -21,10 +21,6 @@ class Member extends Model
         return $this->hasMany(Dependent::class);
     }
 
-    public function address()
-    {
-        return $this->hasOne(Address::class);
-    }
 
     public function auditrail()
     {

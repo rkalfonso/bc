@@ -34,19 +34,16 @@ class CreateMembersTable extends Migration
             $table->string('cellphone_number')->nullable();
             $table->string('occupation')->nullable();
             $table->string('monthly_income')->nullable();
+            $table->string('email')->nullable();
 
             //address
             $table->string('street_number')->nullable();
             $table->string('street_name')->nullable();
-            // $table->foreign('address_id')->references('id')->on('address')->onDelete('cascade');
-            $table->foreignId('address_id')->constrained('address')->onDelete('cascade');
-            // $table->string('barangay')->nullable();
-            // $table->string('municipality')->nullable();
-            // $table->string('zip_code')->nullable();
+            $table->string('barangay')->nullable();
+            $table->string('municipality')->nullable();
+            $table->string('zip_code')->nullable();
 
             $table->timestamps();
-            // $table->dropPrimary('card_number');
-            //$table->primary(array('id'));
         });
     }
 

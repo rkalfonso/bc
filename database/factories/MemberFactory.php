@@ -23,6 +23,7 @@ class MemberFactory extends Factory
     {
         return [
             'category' => $this->faker->randomLetter,
+            'category_id' => $this->faker->randomDigit,
             'first_name' => $this->faker->firstName,
             'middle_name' => $this->faker->firstName,
             'last_name' => $this->faker->lastName,
@@ -38,7 +39,10 @@ class MemberFactory extends Factory
             'monthly_income' => $this->faker->numberBetween($min = 1000, $max = 9000),
             'street_number' => $this->faker->numberBetween($min = 1000, $max = 9000),
             'street_name' => $this->faker->streetName,
-            'address_id' => $this->faker->numberBetween($min = 1, $max = 673),
+            'barangay' => $this->faker->streetName,
+            'municipality' => $this->faker->city,
+            'zip_code' => $this->faker->postcode,
+
 
         ];
     }
